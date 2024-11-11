@@ -28,7 +28,12 @@ const tableData = computed(() => {
 })
 
 const handlePreviousPage = () => {
-  router.go(-1)
+  console.log()
+  if (router.options.history.state.back) {
+    router.go(-1)
+  } else {
+    router.push({ path: '/' })
+  }
 }
 </script>
 
