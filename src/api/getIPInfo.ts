@@ -19,7 +19,7 @@ export const getIpInfo = async (
     }
   } catch (e) {
     return {
-      error: `Не удалось получить информация для IP: ${ip}`,
+      error: `Не удалось получить информацию для IP: ${ip}`,
     }
   }
 }
